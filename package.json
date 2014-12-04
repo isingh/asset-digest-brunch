@@ -13,10 +13,13 @@
     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/",
     "test": "node_modules/.bin/mocha -R list --require test/common.coffee --compilers coffee:coffee-script/register"
   },
-  "dependencies": {},
+  "dependencies": {
+    "glob": "^4.3.1"
+  },
   "devDependencies": {
     "chai": "1.7.0",
     "coffee-script": "^1.8.0",
-    "mocha": "1.11.0"
+    "mocha": "1.11.0",
+    "mock-fs": "^2.3.2"
   }
 }
